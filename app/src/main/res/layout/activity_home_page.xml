@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="100dp"
+    android:paddingLeft="48dp"
+    android:paddingRight="48dp"
+    android:paddingTop="100dp"
+    android:background="#d8ffe684"
+    tools:context=".Home_page">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_weight="1"
+        app:srcCompat="@drawable/heart" />
+
+    <TextView
+        android:id="@+id/vital_care_text"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginLeft="70dp"
+        android:layout_below="@id/imageView"
+        android:layout_marginTop="-4dp"
+        android:fontFamily="cursive"
+        android:gravity="center"
+        android:text="VitalCare"
+        android:textSize="40dp" />
+
+    <Button
+        android:id="@+id/btn_userxmain"
+        style="@style/button_styleMain"
+        android:layout_marginTop="50dp"
+        android:layout_below="@id/vital_care_text"
+        android:text="Analysis" />
+
+    <Button
+        android:id="@+id/btn_userxreport"
+        style="@style/button_styleMain"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/btn_userxmain"
+        android:text="Report" />
+
+    <TextView
+        android:id="@+id/copy_right_credit"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginLeft="30dp"
+        android:layout_below="@id/btn_userxreport"
+        android:layout_marginTop="20dp"
+        android:fontFamily="cursive"
+        android:gravity="center"
+        android:text="© University of Essex - Masters student : Atitaya P."
+        android:textSize="12dp" />
+
+
+
+
+
+
+</RelativeLayout>

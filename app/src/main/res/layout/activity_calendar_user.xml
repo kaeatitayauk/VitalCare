@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#b6cdf1"
+    tools:context="com.example.connectfirebase.calendarUser">
+
+    <TextView
+        android:id="@+id/textDes_set"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:fontFamily="cursive"
+        android:text="Report"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="36dp"
+        android:textStyle="bold"
+        android:paddingTop="9dp"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+
+        android:background="@drawable/button_shape_report"
+        android:shadowColor="#A8A8A8"
+        android:shadowDx="0"
+        android:shadowDy="0"
+        android:shadowRadius="0" />
+
+    <TextView
+        android:id="@+id/textView16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/button"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="39dp"
+        android:fontFamily="cursive"
+        android:text="Select the date:"
+        android:textColor="#000000"
+        android:textSize="18dp" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="150dp"
+        android:layout_height="54dp"
+        android:layout_alignStart="@+id/textView16"
+        android:layout_below="@+id/textView16"
+        android:layout_marginTop="40dp"
+        android:fontFamily="cursive"
+        android:gravity="center"
+        android:text="dd/MM/yyyy"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="90dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/textDes_set"
+        android:layout_marginStart="39dp"
+        android:layout_marginTop="31dp"
+        android:textSize="20dp"
+        android:layout_toEndOf="@+id/textView"
+        android:fontFamily="cursive"
+        android:textColor="#FFFFFF"
+        android:background="#d03060"
+        android:text="Search" />
+
+
+    <Button
+        android:id="@+id/button_check"
+        android:layout_width="90dp"
+        android:layout_height="50dp"
+        android:layout_alignBottom="@+id/textView"
+        android:layout_alignStart="@+id/button"
+        android:background="#d03060"
+        android:textSize="18dp"
+        android:textColor="#FFFFFF"
+        android:fontFamily="cursive"
+        android:text="Check"
+        />
+
+    <Button
+        android:id="@+id/button_back"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:background="#e8dade"
+        android:drawableTop="@drawable/home"
+        android:fontFamily="cursive"
+        android:paddingTop="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:textColor="#FFFFFF"
+        android:textSize="18dp" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/button_check"
+        android:layout_marginTop="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView"
+                android:layout_centerHorizontal="true"
+                android:text=""
+                android:layout_marginTop="3dp"
+                android:layout_marginLeft="30dp"
+                android:textSize="20dp"
+                android:textColor="#000000"
+                android:paddingLeft="30dp"
+                android:paddingTop="15dp"
+                style="@style/Textresult_style"/>
+        </LinearLayout>
+    </ScrollView>
+
+
+</RelativeLayout>

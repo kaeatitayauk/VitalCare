@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "413836203731",
+    "firebase_url": "https://dissertationkae.firebaseio.com",
+    "project_id": "dissertationkae",
+    "storage_bucket": "dissertationkae.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:413836203731:android:32ffe1408f80500eb92626",
+        "android_client_info": {
+          "package_name": "com.example.connectfirebase"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "413836203731-6f9o24nro769av3n96l2kfllqve8brmh.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAIYCze2oKQwLRwzok0OlbqIuZirWCLAJE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "413836203731-6f9o24nro769av3n96l2kfllqve8brmh.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

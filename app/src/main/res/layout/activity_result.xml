@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ResultActivity"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:background="#03397A">
+
+    <TextView
+        android:id="@+id/Result_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:text="Result"
+        android:textSize="36sp"
+        android:fontFamily="cursive"
+        android:textAlignment="center"
+        android:textColor="#ffffff"
+        android:padding="8dp"
+
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/Age_text"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/Result_text"
+        android:layout_marginLeft="127dp"
+        android:layout_marginTop="80dp"
+        android:text="Age :"
+        android:textColor="#ffffff"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/Age_result_show"
+        android:layout_width="96dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/Age_text"
+        android:layout_marginRight="47dp"
+        android:layout_marginTop="-27dp"
+        android:text="TextView"
+        android:textColor="#FF737373"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/Gender_txt"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/Age_text"
+        android:layout_marginLeft="98dp"
+        android:layout_marginTop="50dp"
+        android:text="Gender :"
+        android:textColor="#ffffff"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/Gender_result_show"
+        android:layout_width="96dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/Age_result_show"
+        android:layout_marginRight="50dp"
+        android:layout_marginTop="49dp"
+        android:text="TextView"
+        android:textColor="#FF737373"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/button_back"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:background="#e8dade"
+        android:drawableTop="@drawable/home"
+        android:fontFamily="cursive"
+        android:paddingTop="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:textColor="#FFFFFF"
+        android:textSize="18dp" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Gender_txt"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="58dp"
+        />
+
+    <TextView
+        android:id="@+id/BPM_txt"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/Gender_txt"
+        android:layout_marginLeft="110dp"
+        android:layout_marginTop="50dp"
+        android:text="BPM :"
+        android:textColor="#ffffff"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/BPM_result_show"
+        android:layout_width="96dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/Gender_result_show"
+        android:layout_marginRight="53dp"
+        android:layout_marginTop="51dp"
+        android:text="TextView"
+        android:textColor="#FF737373"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/Result_message_show"
+        android:layout_width="334dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/BPM_result_show"
+        android:layout_marginRight="6dp"
+        android:layout_marginTop="90dp"
+        android:text="[Result message]"
+        android:textAlignment="center"
+        android:textColor="#ffffff"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/btn_save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@id/button_back"
+        android:background="#d03060"
+        android:padding="8dp"
+        android:text="Save"
+        android:paddingTop="10dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginRight="10dp"
+        android:textColor="#ffffff" />
+
+    <TextView
+        android:id="@+id/txt_date"
+        style="@style/button_styleMain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:ems="5"
+        android:inputType="textPersonName"
+        android:text="dd/MM/yyyy"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        android:layout_marginTop="20dp"
+        android:textStyle="bold"
+        />
+
+
+</RelativeLayout>

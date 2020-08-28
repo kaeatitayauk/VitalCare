@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:background="#B3B3D9">
+
+
+    <TextView
+        android:id="@+id/ECG_data_txt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="Electrocardiogram Analysis"
+        android:fontFamily="cursive"
+        android:textAlignment="center"
+        android:textColor="#ffffff"
+        android:padding="8dp"
+        android:textSize="30sp"
+        android:textStyle="bold"/>
+
+
+    <com.github.mikephil.charting.charts.LineChart
+        android:id="@+id/line_chart"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_below="@id/ECG_data_txt"
+        android:layout_marginTop="3dp" />
+
+    <TextView
+        android:id="@+id/Age_txt_main"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/ECG_data_txt"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="340dp"
+        android:text="Age :"
+        android:textColor="#ffffff"
+        android:textSize="20sp" />
+
+
+    <EditText
+        android:id="@+id/input_age"
+        android:layout_width="101dp"
+        android:layout_height="38dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/ECG_data_txt"
+        style="@style/editText_style"
+        android:layout_marginRight="65dp"
+        android:layout_marginTop="330dp"
+        android:inputType="number"
+        android:maxLength="2"
+        android:text=""
+        android:textColor="#000000"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/Gender_txt_main"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/Age_txt_main"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="44dp"
+        android:text="Gender :"
+        android:textColor="#ffffff"
+        android:textSize="20sp" />
+
+    <Spinner
+        android:id="@+id/gender_spin_pick"
+        android:layout_width="121dp"
+        android:layout_height="42dp"
+        style="@style/editText_style"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/input_age"
+        android:layout_marginRight="50dp"
+        android:layout_marginTop="31dp"
+        android:textColor="#000000"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/button"
+        style="@style/button_style"
+        android:layout_marginTop="550dp"
+        android:layout_marginLeft="150dp"
+        android:text="Analyse"
+        />
+
+
+
+</RelativeLayout>
