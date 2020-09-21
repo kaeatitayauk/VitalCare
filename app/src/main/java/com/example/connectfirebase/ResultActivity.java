@@ -66,7 +66,7 @@ public class ResultActivity extends AppCompatActivity {
         txt_date = (TextView) findViewById(R.id.txt_date);
         btn_save = (Button) findViewById(R.id.btn_save);
         ActivityCompat.requestPermissions(this,new String[]{Manifest.permission.SEND_SMS},1);
-       if(gender.equals("Female")){
+       if(gender.equals("Male")){
 
                if (Integer.parseInt(age) >= 18 && Integer.parseInt(age) <= 25) {
                    if (bpm >= 56 && bpm <= 61) {
@@ -179,7 +179,7 @@ public class ResultActivity extends AppCompatActivity {
 
 
         }
-        if(gender.equals("Male")){
+        if(gender.equals("Female")){
 
             if(Integer.parseInt(age)>=18 && Integer.parseInt(age)<=25 ){
                 if(bpm>=61 && bpm<=65){
