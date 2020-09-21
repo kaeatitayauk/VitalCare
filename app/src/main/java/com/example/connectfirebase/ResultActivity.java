@@ -66,35 +66,228 @@ public class ResultActivity extends AppCompatActivity {
         txt_date = (TextView) findViewById(R.id.txt_date);
         btn_save = (Button) findViewById(R.id.btn_save);
         ActivityCompat.requestPermissions(this,new String[]{Manifest.permission.SEND_SMS},1);
-       if(gender.equals("Male")){
+       if(gender.equals("Female")){
 
-           if(bpm>=56 && bpm<=68 && Integer.parseInt(age)>=18){
-               result.setText("You have an excellent heart rate");
-           }
+               if (Integer.parseInt(age) >= 18 && Integer.parseInt(age) <= 25) {
+                   if (bpm >= 56 && bpm <= 61) {
+                       result.setText("You have an excellent heart rate");
+                   }
+                   if (bpm >= 62 && bpm <= 65) {
+                       result.setText("You have a good heart rate");
+                   }
+                   if (bpm >= 66 && bpm <= 69) {
+                       result.setText("You have an above average heart rate");
+                   }
+                   if (bpm >= 70 && bpm <= 73) {
+                       result.setText("You have an average heart rate");
+                   }
+                   if (bpm >= 74 && bpm <= 81) {
+                       result.setText("You have a below average heart rate");
+                   }
+               }
+               if (Integer.parseInt(age) >= 25 && Integer.parseInt(age) <= 35) {
+                   if (bpm >= 55 && bpm <= 61) {
+                       result.setText("You have an excellent heart rate");
+                   }
+                   if (bpm >= 62 && bpm <= 65) {
+                       result.setText("You have a good heart rate");
+                   }
+                   if (bpm >= 66 && bpm <= 70) {
+                       result.setText("You have an above average heart rate");
+                   }
+                   if (bpm >= 71 && bpm <= 74) {
+                       result.setText("You have an average heart rate");
+                   }
+                   if (bpm >= 75 && bpm <= 81) {
+                       result.setText("You have a below average heart rate");
+                   }
+               }
 
-           else if(bpm>60 || bpm<100){
-               result.setText("You have a normal heart rate");
-           }
+               if (Integer.parseInt(age) >= 36 && Integer.parseInt(age) <= 45) {
+                   if (bpm >= 57 && bpm <= 62) {
+                       result.setText("You have an excellent heart rate");
+                   }
+                   if (bpm >= 63 && bpm <= 66) {
+                       result.setText("You have a good heart rate");
+                   }
+                   if (bpm >= 67 && bpm <= 70) {
+                       result.setText("You have an above average heart rate");
+                   }
+                   if (bpm >= 71 && bpm <= 75) {
+                       result.setText("You have an average heart rate");
+                   }
+                   if (bpm >= 76 && bpm <= 82) {
+                       result.setText("You have a below average heart rate");
+                   }
+               }
+               if (Integer.parseInt(age) >= 46 && Integer.parseInt(age) <= 55) {
+                   if (bpm >= 58 && bpm <= 63) {
+                       result.setText("You have an excellent heart rate");
+                   }
+                   if (bpm >= 64 && bpm <= 67) {
+                       result.setText("You have a good heart rate");
+                   }
+                   if (bpm >= 68 && bpm <= 71) {
+                       result.setText("You have an above average heart rate");
+                   }
+                   if (bpm >= 72 && bpm <= 76) {
+                       result.setText("You have an average heart rate");
+                   }
+                   if (bpm >= 77 && bpm <= 83) {
+                       result.setText("You have a below average heart rate");
+                   }
+               }
+               if (Integer.parseInt(age) >= 55 && Integer.parseInt(age) <= 65) {
+                   if (bpm >= 57 && bpm <= 61) {
+                       result.setText("You have an excellent heart rate");
+                   }
+                   if (bpm >= 62 && bpm <= 67) {
+                       result.setText("You have a good heart rate");
+                   }
+                   if (bpm >= 68 && bpm <= 71) {
+                       result.setText("You have an above average heart rate");
+                   }
+                   if (bpm >= 72 && bpm <= 75) {
+                       result.setText("You have an average heart rate");
+                   }
+                   if (bpm >= 76 && bpm <= 81) {
+                       result.setText("You have a below average heart rate");
+                   }
+               }
+               if (Integer.parseInt(age) >= 65) {
+                   if (bpm >= 56 && bpm <= 61) {
+                       result.setText("You have an excellent heart rate");
+                   }
+                   if (bpm >= 62 && bpm <= 65) {
+                       result.setText("You have a good heart rate");
+                   }
+                   if (bpm >= 66 && bpm <= 69) {
+                       result.setText("You have an above average heart rate");
+                   }
+                   if (bpm >= 70 && bpm <= 73) {
+                       result.setText("You have an average heart rate");
+                   }
+                   if (bpm >= 74 && bpm <= 79) {
+                       result.setText("You have a below average heart rate");
+                   }
+               }
 
-           if(bpm<60 || bpm>100){
-               result.setText("You have an abnormal heart rate!");
-               sendSMS("07737215305","Patient have got an abnormal heart rate !");
-           }
+               if (bpm < 60 || bpm > 100) {
+                   result.setText("You have an abnormal heart rate!");
+                   sendSMS("07737215305", "The patient has an abnormal heart rate!");
+               }
+
 
         }
-        if(gender.equals("Female")){
+        if(gender.equals("Male")){
 
-            if(bpm>=60 && bpm<=70 && Integer.parseInt(age)>=18){
-                result.setText("You have an excellent heart rate");
+            if(Integer.parseInt(age)>=18 && Integer.parseInt(age)<=25 ){
+                if(bpm>=61 && bpm<=65){
+                    result.setText("You have an excellent heart rate");
+                }
+                if(bpm>=66 && bpm<=69){
+                    result.setText("You have a good heart rate");
+                }
+                if(bpm>=70 && bpm<=73){
+                    result.setText("You have an above average heart rate");
+                }
+                if(bpm>=74 && bpm<=78){
+                    result.setText("You have an average heart rate");
+                }
+                if(bpm>=79 && bpm<=84){
+                    result.setText("You have a below average heart rate");
+                }
+            }
+            if(Integer.parseInt(age)>=25 && Integer.parseInt(age)<=35 ) {
+                if(bpm>=60 && bpm<=64){
+                    result.setText("You have an excellent heart rate");
+                }
+                if(bpm>=65 && bpm<=68){
+                    result.setText("You have a good heart rate");
+                }
+                if(bpm>=69 && bpm<=72){
+                    result.setText("You have an above average heart rate");
+                }
+                if(bpm>=73 && bpm<=76) {
+                    result.setText("You have an average heart rate");
+                }
+                if(bpm>=77 && bpm<=82){
+                    result.setText("You have a below average heart rate");
+                }
             }
 
-            else if(bpm>60 || bpm<100){
-                result.setText("You have a normal heart rate");
+            if(Integer.parseInt(age)>=36 && Integer.parseInt(age)<=45 ) {
+                if(bpm>=60 && bpm<=64){
+                    result.setText("You have an excellent heart rate");
+                }
+                if(bpm>=65 && bpm<=69){
+                    result.setText("You have a good heart rate");
+                }
+                if(bpm>=70 && bpm<=73){
+                    result.setText("You have an above average heart rate");
+                }
+                if(bpm>=74 && bpm<=78) {
+                    result.setText("You have an average heart rate");
+                }
+                if(bpm>=79 && bpm<=84){
+                    result.setText("You have a below average heart rate");
+                }
+            }
+            if(Integer.parseInt(age)>=46 && Integer.parseInt(age)<=55 ) {
+                if(bpm>=61 && bpm<=65){
+                    result.setText("You have an excellent heart rate");
+                }
+                if(bpm>=66 && bpm<=69){
+                    result.setText("You have a good heart rate");
+                }
+                if(bpm>=70 && bpm<=73){
+                    result.setText("You have an above average heart rate");
+                }
+                if(bpm>=74 && bpm<=77) {
+                    result.setText("You have an average heart rate");
+                }
+                if(bpm>=78 && bpm<=83){
+                    result.setText("You have a below average heart rate");
+                }
+            }
+            if(Integer.parseInt(age)>=55 && Integer.parseInt(age)<=65 ) {
+                if(bpm>=60 && bpm<=64){
+                    result.setText("You have an excellent heart rate");
+                }
+                if(bpm>=65 && bpm<=68){
+                    result.setText("You have a good heart rate");
+                }
+                if(bpm>=69 && bpm<=73){
+                    result.setText("You have an above average heart rate");
+                }
+                if(bpm>=74 && bpm<=77) {
+                    result.setText("You have an average heart rate");
+                }
+                if(bpm>=78 && bpm<=83){
+                    result.setText("You have a below average heart rate");
+                }
+            }
+            if(Integer.parseInt(age)>=65 ) {
+                if(bpm>=60 && bpm<=64){
+                    result.setText("You have an excellent heart rate");
+                }
+                if(bpm>=65 && bpm<=68){
+                    result.setText("You have a good heart rate");
+                }
+                if(bpm>=69 && bpm<=72){
+                    result.setText("You have an above average heart rate");
+                }
+                if(bpm>=73 && bpm<=76) {
+                    result.setText("You have an average heart rate");
+                }
+                if(bpm>=77 && bpm<=84){
+                    result.setText("You have a below average heart rate");
+                }
             }
 
              if(bpm<60 || bpm>100){
                 result.setText("You have an abnormal heart rate!");
-                 sendSMS("07737215305","Patient have got an abnormal heart rate !");
+                 sendSMS("07737215305","The patient has an abnormal heart rate!");
             }
 
 
