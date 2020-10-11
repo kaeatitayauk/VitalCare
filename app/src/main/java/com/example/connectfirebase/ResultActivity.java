@@ -174,7 +174,7 @@ public class ResultActivity extends AppCompatActivity {
 
                if (bpm < 60 || bpm > 100) {
                    result.setText("You have an abnormal heart rate!");
-                   sendSMS("07737215305", "The patient has an abnormal heart rate!");
+                   sendSMS("077.........", "The patient has an abnormal heart rate!"); //insert phone number
                }
 
 
@@ -287,7 +287,7 @@ public class ResultActivity extends AppCompatActivity {
 
              if(bpm<60 || bpm>100){
                 result.setText("You have an abnormal heart rate!");
-                 sendSMS("07737215305","The patient has an abnormal heart rate!");
+                 sendSMS("077............","The patient has an abnormal heart rate!"); // insert phone number
             }
 
 
