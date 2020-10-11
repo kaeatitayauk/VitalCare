@@ -1,4 +1,7 @@
 # VitalCare
+
+<p align= "center"> <img width="543" alt="Screen Shot 2563-10-11 at 10 05 07" src="https://user-images.githubusercontent.com/59909503/95674670-90b39980-0ba9-11eb-9c4c-c8d1bd363f03.png"> </p>
+
 Smartphones have become necessities in this modern age. People typically use smartphones for leisure activities; however, we have developed a mobile application that is practical as well as beneficial in that we aimed to measure and monitor vital signs in vulnerable people. The vast majority of cardiac diseases lead to mortality, according to the World Health Organization (WHO). Therefore, it is essential for people with cardiac diseases to keep track of their health problems and vital signs frequently.
 
 The purposes of this study were to identify irregularities in heartbeats via the PanTompkins machine learning algorithm and develop a wearable device that operates through a mobile application.
